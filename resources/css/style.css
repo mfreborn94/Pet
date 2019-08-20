@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;    
+}
+
+.header {
+    height: 100vh;
+}
+
+
+.container-color {
+    background: linear-gradient(90deg, #FDBD41 -4.86%, #FC7458 106.49%);
+    height: 10vh;
+}
+
+.logo img {
+    margin-top: 15px;
+    margin-left: 70px;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    padding-top: 18px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-box {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.main-container {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+.col-left {
+    width: 40%;
+    float: left;
+}
+
+.col-right {
+    background-image: url(img/Group10438.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 60%;
+    float: left;
+}
+
+.h1-title {
+    color: #F43E3B;
+}
+
+.btn:link,
+.btn:visited {
+    
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+    transition: background 0.3s, color 0.3s
+}
+
+.btn-ghost {
+    color: #FDBD41;
+    border: solid 1px #FDBD41;
+}
+
+.btn-full {
+    background: linear-gradient(90deg, #FDBD41 -6.87%, #FC8254 108.75%);
+    color: #fff;
+    border: solid 1px #FDBD41;
+    
+}
+
+.btn:hover,
+.btn:active {
+    background: #fcab0f;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background: #fcab0f;
+    color: #fff;
+}
+
