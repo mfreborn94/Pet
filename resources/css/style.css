@@ -1,3 +1,6 @@
+/*
+**********BASIC SETUP**********
+*/
 * {
     margin: 0;
     padding: 0;
@@ -13,29 +16,45 @@ html {
     font-weight: 300;    
 }
 
-.header {
+/* ------------------------ */
+/* REUSABLE COMPONENT */
+/* ------------------------ */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+header {
     height: 100vh;
 }
 
+nav {
+    height: 10%;
+}
 
 .container-color {
     background: linear-gradient(90deg, #FDBD41 -4.86%, #FC7458 106.49%);
-    height: 10vh;
+    width: 100%;
+    height: 100%;
 }
 
 .logo img {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 70px;
 }
 .main-nav {
     float: right;
     list-style: none;
-    padding-top: 18px;
 }
 .main-nav li {
     display: inline-block;
     margin-right: 80px;
-    margin-top: 10px;
+    margin-top: 35px;
 }
 
 .main-nav li a {
@@ -52,7 +71,10 @@ html {
 .main-container {
     background-image: url(img/main-background.png);
     background-size: cover;
-    height: 90vh;
+    background-position: fixed;
+    height: 90%;
+    width: 100%;
+    float: left;
 }
 
 
@@ -61,16 +83,19 @@ html {
     color: #F43E3B;
 }
 
+
+/*
+**********BUTTON**********
+*/
 .btn:link,
 .btn:visited {
-    
     text-decoration: none;
     border-radius: 20px;
     padding: 10px 30px;
     display: inline-block;
     margin-right: 20px;
     margin-top: 10px;
-    transition: background 0.3s, color 0.3s
+    transition: background-color 0.5s, color 0.5s
 }
 
 .btn-ghost {
@@ -84,9 +109,26 @@ html {
     border: solid 1px #FDBD41;
     
 }
+.btn-fb {
+    width: 100%;
+    background-color: #2767D3;
+    color: #fff;
+    padding: 19px 20px;
+}
+
+.btn-gg {
+    width: 100%;
+    color: #000;
+    border: 1px solid #FDBD41;
+}
 
 .btn:hover,
 .btn:active {
+    background: #fcab0f;
+}
+
+.btn-full:hover,
+.btn-full:active {
     background: #fcab0f;
 }
 
@@ -96,3 +138,63 @@ html {
     color: #fff;
 }
 
+.btn:hover,
+.btn:active {
+    background: #fcab0f;
+}
+/*
+*****************POP UP**************
+*/
+
+.section-popup {
+    padding: 80px;
+}
+
+.row-sign {
+    width: 60%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.partition {
+    height: 200%;
+}
+
+.partition hr {
+    display: inline-block;
+    width: 40%;
+}
+
+.partition p {
+    display: inline-block;
+    padding-top: 7px;
+    margin: 0 45px;
+    font-size: 15px;
+    vertical-align: middle;
+    height: 110%;
+}
+
+.logo-google {
+    display: inline-block;
+}
+
+*:focus {outline: none;}
+
+
+.popup-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 19px 20px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(90deg, #FDBD41 0%, #FC8553 104.34%);
+    color: #fff;
+    margin-top: 30px;
+}

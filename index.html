@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <link href="resources/css/style.css" rel="stylesheet" type="text/css">
+        
+        <link href="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js" rel="stylesheet">
         <link href="vendors/css/Grid.css" rel="stylesheet" type="text/css">
         <link href="vendors/css/normalize.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="vendors/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="resources/css/style.css" rel="stylesheet" type="text/css">
         <title>Chosmefo</title>
     </head>
     <body>
@@ -27,5 +30,37 @@
                 </div>
             </div>    
         </header>
+        <section class="section-popup">
+            <div class="row">
+                <div class="row-sign">
+                    <a class="btn btn-fb" href="#"><i class="ion-logo-facebook"></i> Continue with facebook</a>
+                </div>
+                <div class="row-sign">
+                    <a href="#" class="btn btn-gg"> <img src="resources/img/logo-google.jpg" alt="Google">Continue with google</a>
+                </div>
+                <div class="row-sign partition">
+                    <hr> <p>OR</p> <hr>
+                </div>
+                <div class="row">
+                    <form method="post" action="#" class="popup-form">
+                        <div class="row-sign">
+                            <input type="text" name="name" id="name" placeholder="First name">
+                        </div>
+                        <div class="row-sign">
+                            <input type="text" name="lastName" id="lastName" placeholder="Last name">
+                        </div>
+                        <div class="row-sign"> 
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="row-sign">
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </div>
+                        <div class="row-sign">
+                            <input type="submit" value="Sign up with account">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
