@@ -149,7 +149,7 @@ nav {
 *****************POP UP**************
 */
 
-.modal-signup {
+.modal {
     padding: 80px;
     position: fixed;
     left: 50%;
@@ -161,7 +161,7 @@ nav {
     z-index: 10;    
 }
 
-.modal-signup.active {
+.modal.active {
     transform: translate(-50%,-50%) scale(1);
 }
 
@@ -227,6 +227,7 @@ input[type="submit"] {
     background: linear-gradient(90deg, #FDBD41 0%, #FC8553 104.34%);
     color: #fff;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 #overlay {
