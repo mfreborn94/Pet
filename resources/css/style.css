@@ -57,9 +57,12 @@ nav {
     margin-top: 35px;
 }
 
-.main-nav li a {
-    text-decoration: none;
+.main-nav li button {
+    border: 0;
     color: #fff;
+    background: none;
+    cursor: pointer;
+    
 }
 
 .text-box {
@@ -146,14 +149,41 @@ nav {
 *****************POP UP**************
 */
 
-.section-popup {
+.modal-signup {
     padding: 80px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    max-width: 80%;
+    background-color: #fff;
+    z-index: 10;    
+}
+
+.modal-signup.active {
+    transform: translate(-50%,-50%) scale(1);
 }
 
 .row-sign {
-    width: 60%;
+    width: 100%;
     margin: 1% auto;
     text-align: center;
+}
+
+.btn-close {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 300%;
+    color: rgb(219, 219, 219);
+    float: right;
+    margin-bottom: 50px;
+}
+
+.btn-close:hover{
+    background: none;
 }
 
 .partition {
@@ -162,7 +192,7 @@ nav {
 
 .partition hr {
     display: inline-block;
-    width: 40%;
+    width: 30%;
 }
 
 .partition p {
@@ -197,4 +227,21 @@ input[type="submit"] {
     background: linear-gradient(90deg, #FDBD41 0%, #FC8553 104.34%);
     color: #fff;
     margin-top: 30px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0 ,0 ,0 , .5);
+    transition: 200ms ease-in-out;
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
